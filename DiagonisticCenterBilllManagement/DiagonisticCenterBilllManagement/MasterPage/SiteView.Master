@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteView.Master.cs" Inherits="DiagonisticCenterBilllManagement.MasterPage.Index" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Unknown Diagnostic Center</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" class="myform">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-7 h">
+                    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unknown Diagnostic Center</h1>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-3"><br/>
+                    <asp:HyperLink CssClass="btn btn-primary btn-block" runat="server" NavigateUrl="../UI/TestTypes.aspx" Text="Test Type Setup" ToolTip="To set what type of test"></asp:HyperLink>
+
+                    <asp:HyperLink CssClass="btn btn-primary btn-block" runat="server" NavigateUrl="../UI/TestSetup.aspx" Text="Test Setup"></asp:HyperLink>
+
+                    <asp:HyperLink CssClass="btn btn-primary btn-block" runat="server" NavigateUrl="../UI/PatientRequestEntry.aspx" Text="Test Request Entry"></asp:HyperLink>
+
+                    <asp:HyperLink CssClass="btn btn-primary btn-block" runat="server" NavigateUrl="../UI/Payment.aspx" Text="Paymet"></asp:HyperLink>
+
+                </div>
+
+                <div class="col-md-6">
+                    <asp:ContentPlaceHolder ID="cpMainContent" runat="server">
+                        
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="col-md-3">
+                    <br/>
+                    <asp:HyperLink CssClass="btn btn-primary btn-block" runat="server" NavigateUrl="../UI/TestWiseReport.aspx" Text="Test Wise Report"></asp:HyperLink>
+
+                    <asp:HyperLink CssClass="btn btn-primary btn-block" runat="server" NavigateUrl="../UI/TypeWiseReport.aspx" Text="Type Wise Report"></asp:HyperLink>
+
+                    <asp:HyperLink CssClass="btn btn-primary btn-block" runat="server" NavigateUrl="../UI/UnpaidBillReport.aspx" Text="Unpaid Bill Report"></asp:HyperLink>
+
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-10"></div>
+
+                <div class="col-md-2">&copy; <span style="color: #dc143c"><b>UN</b></span><span style="color: #006400">known</span></div>
+            </div>
+
+
+        </div>
+    </form>
+</body>
+</html>

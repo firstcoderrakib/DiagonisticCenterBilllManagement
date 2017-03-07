@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.master.cs" Inherits="DiagonisticHospitalManagement.MasterPage.Index" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>My DashBoard</title>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .btn-group-vertical {
+            vertical-align: top !important;
+        }
+
+        .navbar {
+            margin-bottom: 0 !important;
+        }
+
+        .myform {
+            background: url('~/Images/HospitalBac.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .container-fluid {
+            background: rgba(80,80,80,.5);
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" class="myform">
+        <div class="container-fluid">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-signal"></span> Our Hospital Management System</a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="btn-group-vertical btn-group-lg col-md-2">
+                    <a href="Patient.aspx" class="btn btn-primary">Patient</a>
+                    <a href="Payment.aspx" class="btn btn-primary">Payment</a>
+                    <a href="Test.aspx" class="btn btn-primary">Test</a>
+                    <a href="TestReport.aspx" class="btn btn-primary">TestReport</a>
+                    <a href="TestTypes.aspx" class="btn btn-primary">TestTypeName</a>
+                    <a href="TypeReport.aspx" class="btn btn-primary">TypeReport</a>
+                    <a href="UnPaidBillReport.aspx" class="btn btn-primary">UnPaidBillReport</a>
+                </div>
+                <asp:ContentPlaceHolder ID="cpMainContent" runat="server">
+                </asp:ContentPlaceHolder>
+                <footer class="col-md-12">
+                    <span>@CopyRight information. All Rights Reserved 2017</span>
+                </footer>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

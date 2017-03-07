@@ -1,0 +1,23 @@
+﻿body {
+    position: static;
+    background-image: url('../Images/slide3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 20px;
+}
+.container {
+    color: #000000;
+    position: static;
+    background-image: url('../Images/main.png');
+    border-radius: 20px;
+}
+.h {
+    color: #008000;
+    
+}
+p {
+    text-transform: capitalize;
+     text-align: justify;
+    color: #2f4f4f;
+}
